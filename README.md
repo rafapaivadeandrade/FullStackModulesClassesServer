@@ -1,6 +1,6 @@
 ## 🚀 Começando
 
-  
+Banco de dados = SQLite
 
 Primeiro de tudo, você têm que ter o `node` e `yarn`(or `npm`) instalado na sua máquina.
 
