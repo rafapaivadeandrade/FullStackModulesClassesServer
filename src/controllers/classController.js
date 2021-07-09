@@ -42,7 +42,7 @@ module.exports = {
     const { id } = req.params
     const classes = await db("classes")
       .where("module_id", id)
-      .select(["classes.*"]);
+      .select(["classes.*"]).orderBy('name', 'asc')
 
     return res.json(classes);
   },

@@ -36,7 +36,7 @@ module.exports = {
   async getModules(req, res)
   {
     const modules = await db("modules")
-      .select(["modules.*"])
+      .select(["modules.*"]).orderBy('name', 'asc')
 
     return res.json(modules);
   },
